@@ -1,0 +1,58 @@
+\hypertarget{class_babel_1_1_threads_1_1_mutex}{}\doxysection{Babel\+::Threads\+::Mutex Class Reference}
+\label{class_babel_1_1_threads_1_1_mutex}\index{Babel::Threads::Mutex@{Babel::Threads::Mutex}}
+
+
+Class of the mutex thread.  
+
+
+
+
+{\ttfamily \#include $<$Mutex.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Threads\+::Mutex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_threads_1_1_mutex}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_threads_1_1_mutex_a33f500ca10b75ed770bcdb082463675c}\label{class_babel_1_1_threads_1_1_mutex_a33f500ca10b75ed770bcdb082463675c}} 
+void \mbox{\hyperlink{class_babel_1_1_threads_1_1_mutex_a33f500ca10b75ed770bcdb082463675c}{lock}} () override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_i_mutex}{I\+Mutex}} to lock a thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_threads_1_1_mutex_ababff18ea00c32f23c417c630db2d5d8}\label{class_babel_1_1_threads_1_1_mutex_ababff18ea00c32f23c417c630db2d5d8}} 
+void \mbox{\hyperlink{class_babel_1_1_threads_1_1_mutex_ababff18ea00c32f23c417c630db2d5d8}{unlock}} () override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_i_mutex}{I\+Mutex}} to unlock a thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_threads_1_1_mutex_aa49eb8e18ffa19b2769953de2adfa861}\label{class_babel_1_1_threads_1_1_mutex_aa49eb8e18ffa19b2769953de2adfa861}} 
+void \mbox{\hyperlink{class_babel_1_1_threads_1_1_mutex_aa49eb8e18ffa19b2769953de2adfa861}{trylock}} () override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_i_mutex}{I\+Mutex}} to try to lock a thread. \end{DoxyCompactList}\item 
+std\+::mutex \& \mbox{\hyperlink{class_babel_1_1_threads_1_1_mutex_a82d80aa38840ddd672ac9655724b462a}{get\+Mutex}} ()
+\begin{DoxyCompactList}\small\item\em Public function to get the mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the mutex thread. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_threads_1_1_mutex_a82d80aa38840ddd672ac9655724b462a}\label{class_babel_1_1_threads_1_1_mutex_a82d80aa38840ddd672ac9655724b462a}} 
+\index{Babel::Threads::Mutex@{Babel::Threads::Mutex}!getMutex@{getMutex}}
+\index{getMutex@{getMutex}!Babel::Threads::Mutex@{Babel::Threads::Mutex}}
+\doxysubsubsection{\texorpdfstring{getMutex()}{getMutex()}}
+{\footnotesize\ttfamily std\+::mutex \& Babel\+::\+Threads\+::\+Mutex\+::get\+Mutex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Public function to get the mutex. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+the mutex. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common/threads/\mbox{\hyperlink{_mutex_8hpp}{Mutex.\+hpp}}\item 
+src/common/threads/\mbox{\hyperlink{_mutex_8cpp}{Mutex.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,255 @@
+\hypertarget{class_database}{}\doxysection{Database Class Reference}
+\label{class_database}\index{Database@{Database}}
+
+
+Class of the database.  
+
+
+
+
+{\ttfamily \#include $<$Database.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_ad1cced73f1f7ef6f12e06b0b8616c7a3}\label{class_database_ad1cced73f1f7ef6f12e06b0b8616c7a3}} 
+enum \mbox{\hyperlink{class_database_ad1cced73f1f7ef6f12e06b0b8616c7a3}{field\+Type}} \{ \newline
+{\bfseries C\+O\+N\+F\+IG}, 
+{\bfseries N\+E\+X\+T\+\_\+\+ID}, 
+{\bfseries U\+S\+ER}, 
+{\bfseries ID}, 
+\newline
+{\bfseries N\+A\+ME}, 
+{\bfseries P\+A\+S\+S\+W\+O\+RD}, 
+{\bfseries F\+R\+I\+E\+N\+DS}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum which holds field types in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_a7e13f4090206922264d0484b33dd8f84}{Database}} (const std\+::string \&path, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_database}{Database}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_a84d399a2ad58d69daab9b05330e1316d}\label{class_database_a84d399a2ad58d69daab9b05330e1316d}} 
+\mbox{\hyperlink{class_database_a84d399a2ad58d69daab9b05330e1316d}{$\sim$\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_database}{Database}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_a5e34aa1ded8080e39bddb8e5c3af13be}\label{class_database_a5e34aa1ded8080e39bddb8e5c3af13be}} 
+void \mbox{\hyperlink{class_database_a5e34aa1ded8080e39bddb8e5c3af13be}{setup\+DB}} ()
+\begin{DoxyCompactList}\small\item\em Public function to setup the database. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_database_a8c57b10cc937e590524dcecddbdb6f6e}{get\+Id}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to get the database ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_ae5aa80403c6e827dde86b91e73ad4c88}{create\+User}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Public function to create the user. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_a6297acc9b9fb3c68e6bb50f53a515fb9}{check\+User}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Public function to check if the user exists. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_database_ad265c061940076e475a98095adc9f066}{get\+User}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Public function to get the user\textquotesingle{}s ID with his name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_database_a215d2014f68a90fb467009780eb89989}{get\+User}} (uint id)
+\begin{DoxyCompactList}\small\item\em Public function to get the user\textquotesingle{}s name with his ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_a4332f5acbad4a61621a60c04a84f6fb9}{check\+User\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Public function to check if the user\textquotesingle{}s name exist. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_a10f5f9dd047e14d419d53037520c375d}{add\+Friends}} (uint id, uint add)
+\begin{DoxyCompactList}\small\item\em Public function to add friends to the user. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_database_af12cc3317f6cbfc86b2195661038b248}{remove\+Friends}} (uint id, uint remove)
+\begin{DoxyCompactList}\small\item\em Public function to remove a user\textquotesingle{}s friend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ \mbox{\hyperlink{class_database_ad1cced73f1f7ef6f12e06b0b8616c7a3}{field\+Type}}, std\+::string $>$ \mbox{\hyperlink{class_database_ae598977e9a4eda489e5811cf70729d7c}{field\+Name}}
+\begin{DoxyCompactList}\small\item\em Map that contains the name of the field types in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the database. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_database_a7e13f4090206922264d0484b33dd8f84}\label{class_database_a7e13f4090206922264d0484b33dd8f84}} 
+\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{Database()}{Database()}}
+{\footnotesize\ttfamily Database\+::\+Database (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_database}{Database}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of the database. \\
+\hline
+{\em name} & Name of the database. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_a10f5f9dd047e14d419d53037520c375d}\label{class_database_a10f5f9dd047e14d419d53037520c375d}} 
+\index{Database@{Database}!addFriends@{addFriends}}
+\index{addFriends@{addFriends}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{addFriends()}{addFriends()}}
+{\footnotesize\ttfamily bool Database\+::add\+Friends (\begin{DoxyParamCaption}\item[{uint}]{id,  }\item[{uint}]{add }\end{DoxyParamCaption})}
+
+
+
+Public function to add friends to the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID in the database. \\
+\hline
+{\em add} & The number of friends to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the adding status. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a6297acc9b9fb3c68e6bb50f53a515fb9}\label{class_database_a6297acc9b9fb3c68e6bb50f53a515fb9}} 
+\index{Database@{Database}!checkUser@{checkUser}}
+\index{checkUser@{checkUser}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{checkUser()}{checkUser()}}
+{\footnotesize\ttfamily bool Database\+::check\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Public function to check if the user exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the user\textquotesingle{}s existence. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a4332f5acbad4a61621a60c04a84f6fb9}\label{class_database_a4332f5acbad4a61621a60c04a84f6fb9}} 
+\index{Database@{Database}!checkUserName@{checkUserName}}
+\index{checkUserName@{checkUserName}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{checkUserName()}{checkUserName()}}
+{\footnotesize\ttfamily bool Database\+::check\+User\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Public function to check if the user\textquotesingle{}s name exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The user\textquotesingle{}s name to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the user\textquotesingle{}s name existence. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_ae5aa80403c6e827dde86b91e73ad4c88}\label{class_database_ae5aa80403c6e827dde86b91e73ad4c88}} 
+\index{Database@{Database}!createUser@{createUser}}
+\index{createUser@{createUser}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{createUser()}{createUser()}}
+{\footnotesize\ttfamily void Database\+::create\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Public function to create the user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to create. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_database_a8c57b10cc937e590524dcecddbdb6f6e}\label{class_database_a8c57b10cc937e590524dcecddbdb6f6e}} 
+\index{Database@{Database}!getId@{getId}}
+\index{getId@{getId}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily uint Database\+::get\+Id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Public function to get the database ID. 
+
+\begin{DoxyReturn}{Returns}
+the database ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_ad265c061940076e475a98095adc9f066}\label{class_database_ad265c061940076e475a98095adc9f066}} 
+\index{Database@{Database}!getUser@{getUser}}
+\index{getUser@{getUser}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint Database\+::get\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Public function to get the user\textquotesingle{}s ID with his name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the user ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_a215d2014f68a90fb467009780eb89989}\label{class_database_a215d2014f68a90fb467009780eb89989}} 
+\index{Database@{Database}!getUser@{getUser}}
+\index{getUser@{getUser}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Database\+::get\+User (\begin{DoxyParamCaption}\item[{uint}]{id }\end{DoxyParamCaption})}
+
+
+
+Public function to get the user\textquotesingle{}s name with his ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The user ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the user\textquotesingle{}s name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_af12cc3317f6cbfc86b2195661038b248}\label{class_database_af12cc3317f6cbfc86b2195661038b248}} 
+\index{Database@{Database}!removeFriends@{removeFriends}}
+\index{removeFriends@{removeFriends}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{removeFriends()}{removeFriends()}}
+{\footnotesize\ttfamily bool Database\+::remove\+Friends (\begin{DoxyParamCaption}\item[{uint}]{id,  }\item[{uint}]{remove }\end{DoxyParamCaption})}
+
+
+
+Public function to remove a user\textquotesingle{}s friend. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID in the database. \\
+\hline
+{\em remove} & The number of friends to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the removing status. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_database_ae598977e9a4eda489e5811cf70729d7c}\label{class_database_ae598977e9a4eda489e5811cf70729d7c}} 
+\index{Database@{Database}!fieldName@{fieldName}}
+\index{fieldName@{fieldName}!Database@{Database}}
+\doxysubsubsection{\texorpdfstring{fieldName}{fieldName}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{class_database_ad1cced73f1f7ef6f12e06b0b8616c7a3}{field\+Type}}, std\+::string$>$ Database\+::field\+Name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{            \{CONFIG, \textcolor{stringliteral}{"{}config"{}}\},}
+\DoxyCodeLine{            \{NEXT\_ID, \textcolor{stringliteral}{"{}config.next\_id"{}}\},}
+\DoxyCodeLine{            \{USER, \textcolor{stringliteral}{"{}user"{}}\},}
+\DoxyCodeLine{            \{ID, \textcolor{stringliteral}{"{}id"{}}\},}
+\DoxyCodeLine{            \{NAME, \textcolor{stringliteral}{"{}name"{}}\},}
+\DoxyCodeLine{            \{PASSWORD, \textcolor{stringliteral}{"{}password"{}}\},}
+\DoxyCodeLine{            \{FRIENDS, \textcolor{stringliteral}{"{}friends"{}}\}\}}
+
+\end{DoxyCode}
+
+
+Map that contains the name of the field types in the database. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/server/db/\mbox{\hyperlink{_database_8hpp}{Database.\+hpp}}\item 
+src/server/db/\mbox{\hyperlink{_database_8cpp}{Database.\+cpp}}\end{DoxyCompactItemize}

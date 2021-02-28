@@ -1,0 +1,192 @@
+\hypertarget{class_babel_1_1_boost_t_c_p_socket}{}\doxysection{Babel\+::Boost\+T\+C\+P\+Socket Class Reference}
+\label{class_babel_1_1_boost_t_c_p_socket}\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+
+
+Class of Boost T\+CP socket.  
+
+
+
+
+{\ttfamily \#include $<$Boost\+T\+C\+P\+Socket.\+hpp$>$}
+
+Inheritance diagram for Babel\+::Boost\+T\+C\+P\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.777778cm]{class_babel_1_1_boost_t_c_p_socket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}\label{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}} 
+typedef boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket}{Boost\+T\+C\+P\+Socket}} $>$ \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}{ptr}}
+\begin{DoxyCompactList}\small\item\em Typedef of the \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket}{Boost\+T\+C\+P\+Socket}} shared pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_acc5dd3ae456a280cb8b357740a64ced3}{Boost\+T\+C\+P\+Socket}} (\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&infos, boost\+::asio\+::io\+\_\+service \&io\+\_\+service)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket}{Boost\+T\+C\+P\+Socket}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_a909c2bac173da2693bbabfeea7601b56}\label{class_babel_1_1_boost_t_c_p_socket_a909c2bac173da2693bbabfeea7601b56}} 
+\mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_a909c2bac173da2693bbabfeea7601b56}{$\sim$\+Boost\+T\+C\+P\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket}{Boost\+T\+C\+P\+Socket}}. \end{DoxyCompactList}\item 
+boost\+::asio\+::ip\+::tcp\+::socket \& \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_ae8ad34b3f15e5e8b57414260eefe4530}{get\+Sock}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to get the boost socket. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_ab2bfea2e4c7c91c19d758d8496fbcdcd}{connect}} (void) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to connect the socket. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_ade9b8a08d327f57c8879d20161438c67}{disconnect}} (void) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to disconnect the socket. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_a35851c1fee21d8fa02a9d6c6e64730de}{send}} (const std\+::string \&data) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to send a message. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_a6ce94467ec3a6a69b0124c35922e3731}{receive}} (void) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to receive a message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_a0ef16388b697d3d1f12f9e797e7cc380}\label{class_babel_1_1_boost_t_c_p_socket_a0ef16388b697d3d1f12f9e797e7cc380}} 
+void \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_a0ef16388b697d3d1f12f9e797e7cc380}{read}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to read the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}{ptr}} \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_ad41b379b1954bd02ba4afa4a9b90471a}{create}} (\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} infos, boost\+::asio\+::io\+\_\+service \&io\+\_\+service)
+\begin{DoxyCompactList}\small\item\em Public function to create the pointer of the boost socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class of Boost T\+CP socket. 
+
+Inherited from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_acc5dd3ae456a280cb8b357740a64ced3}\label{class_babel_1_1_boost_t_c_p_socket_acc5dd3ae456a280cb8b357740a64ced3}} 
+\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}!BoostTCPSocket@{BoostTCPSocket}}
+\index{BoostTCPSocket@{BoostTCPSocket}!Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+\doxysubsubsection{\texorpdfstring{BoostTCPSocket()}{BoostTCPSocket()}}
+{\footnotesize\ttfamily Babel\+::\+Boost\+T\+C\+P\+Socket\+::\+Boost\+T\+C\+P\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&}]{infos,  }\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket}{Boost\+T\+C\+P\+Socket}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infos} & Infos about the connection. \\
+\hline
+{\em io\+\_\+service} & Boost asio service. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_ab2bfea2e4c7c91c19d758d8496fbcdcd}\label{class_babel_1_1_boost_t_c_p_socket_ab2bfea2e4c7c91c19d758d8496fbcdcd}} 
+\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}!connect@{connect}}
+\index{connect@{connect}!Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily bool Babel\+::\+Boost\+T\+C\+P\+Socket\+::connect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to connect the socket. 
+
+\begin{DoxyReturn}{Returns}
+the connection status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_aadb07ff2dfbe76422bd339d3eb2a9ac3}{Babel\+::\+A\+T\+C\+P\+Socket}}.
+
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_ad41b379b1954bd02ba4afa4a9b90471a}\label{class_babel_1_1_boost_t_c_p_socket_ad41b379b1954bd02ba4afa4a9b90471a}} 
+\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}!create@{create}}
+\index{create@{create}!Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}{Babel\+::\+Boost\+T\+C\+P\+Socket\+::ptr}} Babel\+::\+Boost\+T\+C\+P\+Socket\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}}}]{infos,  }\item[{boost\+::asio\+::io\+\_\+service \&}]{io\+\_\+service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Public function to create the pointer of the boost socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infos} & Infos about the connection. \\
+\hline
+{\em io\+\_\+service} & Boost asio service. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pointer of the boost socket. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_ade9b8a08d327f57c8879d20161438c67}\label{class_babel_1_1_boost_t_c_p_socket_ade9b8a08d327f57c8879d20161438c67}} 
+\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily bool Babel\+::\+Boost\+T\+C\+P\+Socket\+::disconnect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to disconnect the socket. 
+
+\begin{DoxyReturn}{Returns}
+the disconnection status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a09876941856256557dc0cec6be9a4bef}{Babel\+::\+A\+T\+C\+P\+Socket}}.
+
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_ae8ad34b3f15e5e8b57414260eefe4530}\label{class_babel_1_1_boost_t_c_p_socket_ae8ad34b3f15e5e8b57414260eefe4530}} 
+\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}!getSock@{getSock}}
+\index{getSock@{getSock}!Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+\doxysubsubsection{\texorpdfstring{getSock()}{getSock()}}
+{\footnotesize\ttfamily boost\+::asio\+::ip\+::tcp\+::socket \& Babel\+::\+Boost\+T\+C\+P\+Socket\+::get\+Sock (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Public function to get the boost socket. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+the boost socket. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_a6ce94467ec3a6a69b0124c35922e3731}\label{class_babel_1_1_boost_t_c_p_socket_a6ce94467ec3a6a69b0124c35922e3731}} 
+\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}!receive@{receive}}
+\index{receive@{receive}!Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily std\+::string Babel\+::\+Boost\+T\+C\+P\+Socket\+::receive (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to receive a message. 
+
+\begin{DoxyReturn}{Returns}
+the string message. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_ad2cb29bc10b6cc7666243feafbe85a1a}{Babel\+::\+A\+T\+C\+P\+Socket}}.
+
+\mbox{\Hypertarget{class_babel_1_1_boost_t_c_p_socket_a35851c1fee21d8fa02a9d6c6e64730de}\label{class_babel_1_1_boost_t_c_p_socket_a35851c1fee21d8fa02a9d6c6e64730de}} 
+\index{Babel::BoostTCPSocket@{Babel::BoostTCPSocket}!send@{send}}
+\index{send@{send}!Babel::BoostTCPSocket@{Babel::BoostTCPSocket}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily bool Babel\+::\+Boost\+T\+C\+P\+Socket\+::send (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}} to send a message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{\hyperlink{class_data}{Data}} to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sending status. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_aadbbb4f8ea8a1109e45c82dcb3e1ab4a}{Babel\+::\+A\+T\+C\+P\+Socket}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common/network/\mbox{\hyperlink{_boost_t_c_p_socket_8hpp}{Boost\+T\+C\+P\+Socket.\+hpp}}\item 
+src/common/network/\mbox{\hyperlink{_boost_t_c_p_socket_8cpp}{Boost\+T\+C\+P\+Socket.\+cpp}}\end{DoxyCompactItemize}

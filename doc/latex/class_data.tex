@@ -1,0 +1,197 @@
+\hypertarget{class_data}{}\doxysection{Data Class Reference}
+\label{class_data}\index{Data@{Data}}
+
+
+Class of the data request.  
+
+
+
+
+{\ttfamily \#include $<$Data.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_aff6e83588792cd82c57991926ea9b54f}{Data}} (uint code, const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_a645ed37a78ec6d5037891f23689e7ae8}{Data}} (uint code, const std\+::vector$<$ std\+::string $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_a5ca1e677cf94d2c93418349db3aaa19d}{Data}} (uint code)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_ae9959ba09d47f081e6221f8144e1d885}{Data}} (const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_af11f741cb7f587e2e495452a8905a22a}\label{class_data_af11f741cb7f587e2e495452a8905a22a}} 
+\mbox{\hyperlink{class_data_af11f741cb7f587e2e495452a8905a22a}{Data}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor of \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_aab31956423290f0d62dcca47ab4d16dd}\label{class_data_aab31956423290f0d62dcca47ab4d16dd}} 
+\mbox{\hyperlink{class_data_aab31956423290f0d62dcca47ab4d16dd}{$\sim$\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_data}{Data}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a88ebfb10dab12b2f55640b92aac910c8}{push\+Back}} (const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Public function to push back a data request. \end{DoxyCompactList}\item 
+uint \mbox{\hyperlink{class_data_a89d8759bf54c20bbbc4e41e1358c898a}{get\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Public function to get the request code. \end{DoxyCompactList}\item 
+const std\+::string \mbox{\hyperlink{class_data_a1e9c98d771592301447f5e89baaf19b8}{get\+Req}} ()
+\begin{DoxyCompactList}\small\item\em Public function to get the request. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_a5db57dfc2b9988adf4acfb224ac966f6}\label{class_data_a5db57dfc2b9988adf4acfb224ac966f6}} 
+void \mbox{\hyperlink{class_data_a5db57dfc2b9988adf4acfb224ac966f6}{convert\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Public function to convert data. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_data_a2bdacfbae09dc5f396f34287502bc106}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Public function to get the data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_a3dafd3e71669eafedcf4d6b0440db539}{set\+Code}} (uint code)
+\begin{DoxyCompactList}\small\item\em Public function to set the request code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the data request. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_aff6e83588792cd82c57991926ea9b54f}\label{class_data_aff6e83588792cd82c57991926ea9b54f}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{uint}]{code,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code of the request. \\
+\hline
+{\em data} & The data request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_a645ed37a78ec6d5037891f23689e7ae8}\label{class_data_a645ed37a78ec6d5037891f23689e7ae8}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{uint}]{code,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code of the request. \\
+\hline
+{\em data} & The sequence container of the data request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_a5ca1e677cf94d2c93418349db3aaa19d}\label{class_data_a5ca1e677cf94d2c93418349db3aaa19d}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{uint}]{code }\end{DoxyParamCaption})}
+
+
+
+Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The code of the request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_ae9959ba09d47f081e6221f8144e1d885}\label{class_data_ae9959ba09d47f081e6221f8144e1d885}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Overloaded constructor of \mbox{\hyperlink{class_data}{Data}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data request. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_a89d8759bf54c20bbbc4e41e1358c898a}\label{class_data_a89d8759bf54c20bbbc4e41e1358c898a}} 
+\index{Data@{Data}!getCode@{getCode}}
+\index{getCode@{getCode}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getCode()}{getCode()}}
+{\footnotesize\ttfamily uint Data\+::get\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Public function to get the request code. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+the request code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a2bdacfbae09dc5f396f34287502bc106}\label{class_data_a2bdacfbae09dc5f396f34287502bc106}} 
+\index{Data@{Data}!getData@{getData}}
+\index{getData@{getData}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ Data\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Public function to get the data. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+the data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a1e9c98d771592301447f5e89baaf19b8}\label{class_data_a1e9c98d771592301447f5e89baaf19b8}} 
+\index{Data@{Data}!getReq@{getReq}}
+\index{getReq@{getReq}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getReq()}{getReq()}}
+{\footnotesize\ttfamily const std\+::string Data\+::get\+Req (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Public function to get the request. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+the request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_data_a88ebfb10dab12b2f55640b92aac910c8}\label{class_data_a88ebfb10dab12b2f55640b92aac910c8}} 
+\index{Data@{Data}!pushBack@{pushBack}}
+\index{pushBack@{pushBack}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{pushBack()}{pushBack()}}
+{\footnotesize\ttfamily void Data\+::push\+Back (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Public function to push back a data request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & The data request. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_a3dafd3e71669eafedcf4d6b0440db539}\label{class_data_a3dafd3e71669eafedcf4d6b0440db539}} 
+\index{Data@{Data}!setCode@{setCode}}
+\index{setCode@{setCode}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setCode()}{setCode()}}
+{\footnotesize\ttfamily void Data\+::set\+Code (\begin{DoxyParamCaption}\item[{uint}]{code }\end{DoxyParamCaption})}
+
+
+
+Public function to set the request code. 
+
+Setter method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & the request code. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common/command\+Parser/\mbox{\hyperlink{_data_8hpp}{Data.\+hpp}}\item 
+src/common/command\+Parser/\mbox{\hyperlink{_data_8cpp}{Data.\+cpp}}\end{DoxyCompactItemize}

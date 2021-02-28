@@ -1,0 +1,127 @@
+\hypertarget{class_state_machine}{}\doxysection{State\+Machine Class Reference}
+\label{class_state_machine}\index{StateMachine@{StateMachine}}
+
+
+Class of the state of the machine.  
+
+
+
+
+{\ttfamily \#include $<$State\+Machine.\+hpp$>$}
+
+Inheritance diagram for State\+Machine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_state_machine}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_state_machine_a10e27d5e00349383bb40f83d8ceb2933}{State\+Machine}} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_state_machine}{State\+Machine}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_state_machine_a93d66cb2a89b186789d655a08b02674e}\label{class_state_machine_a93d66cb2a89b186789d655a08b02674e}} 
+\mbox{\hyperlink{class_state_machine_a93d66cb2a89b186789d655a08b02674e}{$\sim$\+State\+Machine}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_state_machine}{State\+Machine}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_state_machine_a56f8f2cadccbf7cbb4ffe9450dcad568}{add\+State}} (\mbox{\hyperlink{class_a_state}{A\+State}} $\ast$s, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Public function to add a state to the machine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_state_machine_af407f5dbb34326d65ed2127055066b84}{set\+State}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Public function to set a state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_state}{A\+State}} $\ast$ \mbox{\hyperlink{class_state_machine_ac9edf8a742dc2e67f9f0cf8ec2cd3b5b}{get\+State}} (const std\+::string \&name) const
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_a_state}{A\+State}} $\ast$ $>$ \& \mbox{\hyperlink{class_state_machine_ab937795ac19efdf5d304496f3f3920cf}{get\+All\+States}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the state of the machine. 
+
+Inherited from Q\+Stacked\+Widget. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_state_machine_a10e27d5e00349383bb40f83d8ceb2933}\label{class_state_machine_a10e27d5e00349383bb40f83d8ceb2933}} 
+\index{StateMachine@{StateMachine}!StateMachine@{StateMachine}}
+\index{StateMachine@{StateMachine}!StateMachine@{StateMachine}}
+\doxysubsubsection{\texorpdfstring{StateMachine()}{StateMachine()}}
+{\footnotesize\ttfamily State\+Machine\+::\+State\+Machine (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_state_machine}{State\+Machine}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The widget of the user interface. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_state_machine_a56f8f2cadccbf7cbb4ffe9450dcad568}\label{class_state_machine_a56f8f2cadccbf7cbb4ffe9450dcad568}} 
+\index{StateMachine@{StateMachine}!addState@{addState}}
+\index{addState@{addState}!StateMachine@{StateMachine}}
+\doxysubsubsection{\texorpdfstring{addState()}{addState()}}
+{\footnotesize\ttfamily bool State\+Machine\+::add\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_state}{A\+State}} $\ast$}]{s,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Public function to add a state to the machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The application state to add. \\
+\hline
+{\em name} & The name of the state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The adding status. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_machine_ab937795ac19efdf5d304496f3f3920cf}\label{class_state_machine_ab937795ac19efdf5d304496f3f3920cf}} 
+\index{StateMachine@{StateMachine}!getAllStates@{getAllStates}}
+\index{getAllStates@{getAllStates}!StateMachine@{StateMachine}}
+\doxysubsubsection{\texorpdfstring{getAllStates()}{getAllStates()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_a_state}{A\+State}} $\ast$ $>$ \& State\+Machine\+::get\+All\+States (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Public function to get all the states of the machine.
+
+\begin{DoxyReturn}{Returns}
+A map of application states. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_machine_ac9edf8a742dc2e67f9f0cf8ec2cd3b5b}\label{class_state_machine_ac9edf8a742dc2e67f9f0cf8ec2cd3b5b}} 
+\index{StateMachine@{StateMachine}!getState@{getState}}
+\index{getState@{getState}!StateMachine@{StateMachine}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_state}{A\+State}} $\ast$ State\+Machine\+::get\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+Public function to get a state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the state. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The application state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_state_machine_af407f5dbb34326d65ed2127055066b84}\label{class_state_machine_af407f5dbb34326d65ed2127055066b84}} 
+\index{StateMachine@{StateMachine}!setState@{setState}}
+\index{setState@{setState}!StateMachine@{StateMachine}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void State\+Machine\+::set\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Public function to set a state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the state. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/client/state\+Machine/\mbox{\hyperlink{_state_machine_8hpp}{State\+Machine.\+hpp}}\item 
+src/client/state\+Machine/\mbox{\hyperlink{_state_machine_8cpp}{State\+Machine.\+cpp}}\end{DoxyCompactItemize}

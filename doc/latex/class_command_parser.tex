@@ -1,0 +1,98 @@
+\hypertarget{class_command_parser}{}\doxysection{Command\+Parser Class Reference}
+\label{class_command_parser}\index{CommandParser@{CommandParser}}
+
+
+Class of the command parser.  
+
+
+
+
+{\ttfamily \#include $<$Command\+Parser.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_command_parser_a1fd17c361d85ec13c212cbac1999b9b3}\label{class_command_parser_a1fd17c361d85ec13c212cbac1999b9b3}} 
+\mbox{\hyperlink{class_command_parser_a1fd17c361d85ec13c212cbac1999b9b3}{Command\+Parser}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_command_parser}{Command\+Parser}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_command_parser_aad541c0cf94d4a45e7b59003f64b16f3}\label{class_command_parser_aad541c0cf94d4a45e7b59003f64b16f3}} 
+\mbox{\hyperlink{class_command_parser_aad541c0cf94d4a45e7b59003f64b16f3}{$\sim$\+Command\+Parser}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_command_parser}{Command\+Parser}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_command_parser_a0ee0d1c4f5c296da0628f36a96b77320}{parse\+Cmd}} (std\+::string \&cmd, char cmd\+Separator)
+\begin{DoxyCompactList}\small\item\em Public function to parser a command. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_command_parser_a79b3ff335e997125cb6acd40436965de}{create\+Req}} (uint code, const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Public function to create the request. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_command_parser_a6f5c531011db8bd8d070c15e41d2f831}{create\+Req}} (\mbox{\hyperlink{class_data}{Data}} data)
+\begin{DoxyCompactList}\small\item\em Public function to create the request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the command parser. 
+
+Format queries and parse commands. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_command_parser_a6f5c531011db8bd8d070c15e41d2f831}\label{class_command_parser_a6f5c531011db8bd8d070c15e41d2f831}} 
+\index{CommandParser@{CommandParser}!createReq@{createReq}}
+\index{createReq@{createReq}!CommandParser@{CommandParser}}
+\doxysubsubsection{\texorpdfstring{createReq()}{createReq()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Command\+Parser\+::create\+Req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data}{Data}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Public function to create the request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{\hyperlink{class_data}{Data}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_command_parser_a79b3ff335e997125cb6acd40436965de}\label{class_command_parser_a79b3ff335e997125cb6acd40436965de}} 
+\index{CommandParser@{CommandParser}!createReq@{createReq}}
+\index{createReq@{createReq}!CommandParser@{CommandParser}}
+\doxysubsubsection{\texorpdfstring{createReq()}{createReq()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Command\+Parser\+::create\+Req (\begin{DoxyParamCaption}\item[{uint}]{code,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Public function to create the request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The action code. \\
+\hline
+{\em data} & \mbox{\hyperlink{class_data}{Data}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the request. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_command_parser_a0ee0d1c4f5c296da0628f36a96b77320}\label{class_command_parser_a0ee0d1c4f5c296da0628f36a96b77320}} 
+\index{CommandParser@{CommandParser}!parseCmd@{parseCmd}}
+\index{parseCmd@{parseCmd}!CommandParser@{CommandParser}}
+\doxysubsubsection{\texorpdfstring{parseCmd()}{parseCmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} Command\+Parser\+::parse\+Cmd (\begin{DoxyParamCaption}\item[{std\+::string \&}]{cmd,  }\item[{char}]{cmd\+Separator }\end{DoxyParamCaption})}
+
+
+
+Public function to parser a command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command to parse. \\
+\hline
+{\em cmd\+Separator} & The command delimiter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the request data. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common/command\+Parser/\mbox{\hyperlink{_command_parser_8hpp}{Command\+Parser.\+hpp}}\item 
+src/common/command\+Parser/\mbox{\hyperlink{_command_parser_8cpp}{Command\+Parser.\+cpp}}\end{DoxyCompactItemize}

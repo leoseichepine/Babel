@@ -1,0 +1,102 @@
+\hypertarget{class_a_state}{}\doxysection{A\+State Class Reference}
+\label{class_a_state}\index{AState@{AState}}
+
+
+Abstract class of the application.  
+
+
+
+
+{\ttfamily \#include $<$A\+State.\+hpp$>$}
+
+Inheritance diagram for A\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_a_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_state_a0ca94a12eab0c5226627b960eb401b7c}{A\+State}} (Q\+Widget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_a_state}{A\+State}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_a_state_a6e165034c6d397140b81f318a25eae61}{$\sim$\+A\+State}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_a_state}{A\+State}}. \end{DoxyCompactList}\item 
+Q\+Grid\+Layout $\ast$ \mbox{\hyperlink{class_a_state_a15bf96e47c878e75032e3f1adb4030fe}{get\+Layout}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the layout of the view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_state_ae350d8d1d4f0925c9b7264fbb1f7f44c}{show\+Message\+Box}} (const std\+::string \&txt)
+\begin{DoxyCompactList}\small\item\em Show a message box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class of the application. 
+
+Inherited from Q\+Widget. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_state_a0ca94a12eab0c5226627b960eb401b7c}\label{class_a_state_a0ca94a12eab0c5226627b960eb401b7c}} 
+\index{AState@{AState}!AState@{AState}}
+\index{AState@{AState}!AState@{AState}}
+\doxysubsubsection{\texorpdfstring{AState()}{AState()}}
+{\footnotesize\ttfamily A\+State\+::\+A\+State (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_a_state}{A\+State}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The widget of the user interface. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_a_state_a6e165034c6d397140b81f318a25eae61}\label{class_a_state_a6e165034c6d397140b81f318a25eae61}} 
+\index{AState@{AState}!````~AState@{$\sim$AState}}
+\index{````~AState@{$\sim$AState}!AState@{AState}}
+\doxysubsubsection{\texorpdfstring{$\sim$AState()}{~AState()}}
+{\footnotesize\ttfamily A\+State\+::$\sim$\+A\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor of \mbox{\hyperlink{class_a_state}{A\+State}}. 
+
+Removes components of the application. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_state_a15bf96e47c878e75032e3f1adb4030fe}\label{class_a_state_a15bf96e47c878e75032e3f1adb4030fe}} 
+\index{AState@{AState}!getLayout@{getLayout}}
+\index{getLayout@{getLayout}!AState@{AState}}
+\doxysubsubsection{\texorpdfstring{getLayout()}{getLayout()}}
+{\footnotesize\ttfamily Q\+Grid\+Layout $\ast$ A\+State\+::get\+Layout (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the layout of the view. 
+
+Public getter method.
+
+\begin{DoxyReturn}{Returns}
+A Q\+Grid\+Layout which takes the space made available to it. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_a_state_ae350d8d1d4f0925c9b7264fbb1f7f44c}\label{class_a_state_ae350d8d1d4f0925c9b7264fbb1f7f44c}} 
+\index{AState@{AState}!showMessageBox@{showMessageBox}}
+\index{showMessageBox@{showMessageBox}!AState@{AState}}
+\doxysubsubsection{\texorpdfstring{showMessageBox()}{showMessageBox()}}
+{\footnotesize\ttfamily void A\+State\+::show\+Message\+Box (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{txt }\end{DoxyParamCaption})}
+
+
+
+Show a message box. 
+
+Public method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em txt} & Text to display. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/client/state\+Machine/\mbox{\hyperlink{_a_state_8hpp}{A\+State.\+hpp}}\item 
+src/client/state\+Machine/\mbox{\hyperlink{_a_state_8cpp}{A\+State.\+cpp}}\end{DoxyCompactItemize}

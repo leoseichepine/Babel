@@ -1,0 +1,159 @@
+\hypertarget{class_port_audio_library}{}\doxysection{Port\+Audio\+Library Class Reference}
+\label{class_port_audio_library}\index{PortAudioLibrary@{PortAudioLibrary}}
+
+
+Class of the Port Audio Library.  
+
+
+
+
+{\ttfamily \#include $<$Port\+Audio\+Library.\+hpp$>$}
+
+Inheritance diagram for Port\+Audio\+Library\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_port_audio_library}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_port_audio_library_a7ae98947526e3673fb00998e07aa341d}\label{class_port_audio_library_a7ae98947526e3673fb00998e07aa341d}} 
+\mbox{\hyperlink{class_port_audio_library_a7ae98947526e3673fb00998e07aa341d}{Port\+Audio\+Library}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_port_audio_library}{Port\+Audio\+Library}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_port_audio_library_a7acaacedb8d2da833c844717f8f7f86c}\label{class_port_audio_library_a7acaacedb8d2da833c844717f8f7f86c}} 
+\mbox{\hyperlink{class_port_audio_library_a7acaacedb8d2da833c844717f8f7f86c}{$\sim$\+Port\+Audio\+Library}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_port_audio_library}{Port\+Audio\+Library}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_port_audio_library_ac8079e6a7f898dfde57d48e4141b4428}\label{class_port_audio_library_ac8079e6a7f898dfde57d48e4141b4428}} 
+void \mbox{\hyperlink{class_port_audio_library_ac8079e6a7f898dfde57d48e4141b4428}{start\+Record}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to start the record. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_port_audio_library_a39dc6669220100e87198c082c0051847}\label{class_port_audio_library_a39dc6669220100e87198c082c0051847}} 
+void \mbox{\hyperlink{class_port_audio_library_a39dc6669220100e87198c082c0051847}{stop\+Record}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to stop the record. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_port_audio_library_a4bcaf8bc8efc8c156c8348bafe14f013}\label{class_port_audio_library_a4bcaf8bc8efc8c156c8348bafe14f013}} 
+void \mbox{\hyperlink{class_port_audio_library_a4bcaf8bc8efc8c156c8348bafe14f013}{start\+Play}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to start listening. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_port_audio_library_a08484868c8bdb26a1f0a2354f9ee6454}\label{class_port_audio_library_a08484868c8bdb26a1f0a2354f9ee6454}} 
+void \mbox{\hyperlink{class_port_audio_library_a08484868c8bdb26a1f0a2354f9ee6454}{stop\+Play}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to stop listening. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{struct_decoded}{Decoded}} $>$ \mbox{\hyperlink{class_port_audio_library_aa8ed392ba57e118835186bc598629a68}{get\+Rec\+Buffer}} (void) const
+\begin{DoxyCompactList}\small\item\em Public function to get the record buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_port_audio_library_a14d9b60dbd82c4e978baa6c32f69711c}{set\+Play\+Buffer}} (const std\+::list$<$ \mbox{\hyperlink{struct_decoded}{Decoded}} $>$ buff)
+\begin{DoxyCompactList}\small\item\em Public function to set the listening buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_port_audio_library_a91231b5e5722a1d18dcb1a19977ae300}\label{class_port_audio_library_a91231b5e5722a1d18dcb1a19977ae300}} 
+void \mbox{\hyperlink{class_port_audio_library_a91231b5e5722a1d18dcb1a19977ae300}{play\+Back}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to listen again the buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_port_audio_library_af4bf4f445988aacb432fb7c4fc452303}\label{class_port_audio_library_af4bf4f445988aacb432fb7c4fc452303}} 
+void \mbox{\hyperlink{class_port_audio_library_af4bf4f445988aacb432fb7c4fc452303}{link\+Default\+Divice}} ()
+\begin{DoxyCompactList}\small\item\em Public function to link the default device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_port_audio_library_a05dec545cb843f29e147e506ac5bf552}{record\+Callback}} (const void $\ast$input\+Buffer, void $\ast$output\+Buffer, unsigned long frames\+Per\+Buffer, const Pa\+Stream\+Callback\+Time\+Info $\ast$time\+Info, Pa\+Stream\+Callback\+Flags status\+Flags, void $\ast$user\+Data)
+\begin{DoxyCompactList}\small\item\em Public function to get the record callback. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_port_audio_library_a3696990e861a6b3745a5633a2b82a699}{play\+Callback}} (const void $\ast$input\+Buffer, void $\ast$output\+Buffer, unsigned long frames\+Per\+Buffer, const Pa\+Stream\+Callback\+Time\+Info $\ast$time\+Info, Pa\+Stream\+Callback\+Flags status\+Flags, void $\ast$user\+Data)
+\begin{DoxyCompactList}\small\item\em Public function to get the listening callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the Port Audio Library. 
+
+Compliant with \mbox{\hyperlink{class_i_audio_library}{I\+Audio\+Library}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_port_audio_library_aa8ed392ba57e118835186bc598629a68}\label{class_port_audio_library_aa8ed392ba57e118835186bc598629a68}} 
+\index{PortAudioLibrary@{PortAudioLibrary}!getRecBuffer@{getRecBuffer}}
+\index{getRecBuffer@{getRecBuffer}!PortAudioLibrary@{PortAudioLibrary}}
+\doxysubsubsection{\texorpdfstring{getRecBuffer()}{getRecBuffer()}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{struct_decoded}{Decoded}} $>$ Port\+Audio\+Library\+::get\+Rec\+Buffer (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Public function to get the record buffer. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+a list of decoder. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_port_audio_library_a3696990e861a6b3745a5633a2b82a699}\label{class_port_audio_library_a3696990e861a6b3745a5633a2b82a699}} 
+\index{PortAudioLibrary@{PortAudioLibrary}!playCallback@{playCallback}}
+\index{playCallback@{playCallback}!PortAudioLibrary@{PortAudioLibrary}}
+\doxysubsubsection{\texorpdfstring{playCallback()}{playCallback()}}
+{\footnotesize\ttfamily int Port\+Audio\+Library\+::play\+Callback (\begin{DoxyParamCaption}\item[{const void $\ast$}]{input\+Buffer,  }\item[{void $\ast$}]{output\+Buffer,  }\item[{unsigned long}]{frames\+Per\+Buffer,  }\item[{const Pa\+Stream\+Callback\+Time\+Info $\ast$}]{time\+Info,  }\item[{Pa\+Stream\+Callback\+Flags}]{status\+Flags,  }\item[{void $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Public function to get the listening callback. 
+
+This routine will be called by the Port\+Audio engine when audio is needed. It may be called at interrupt level on some machines so don\textquotesingle{}t do anything that could mess up the system like calling malloc() or free().
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Buffer} & Pointer of the buffer input. \\
+\hline
+{\em output\+Buffer} & Pointer of the buffer output. \\
+\hline
+{\em frames\+Per\+Buffer} & The number of frames per buffer. \\
+\hline
+{\em time\+Info} & Timing information for the buffers passed to the stream callback. \\
+\hline
+{\em status\+Flags} & Flag bit constants for the status\+Flags to Pa\+Stream\+Callback. \\
+\hline
+{\em user\+Data} & Pointer of the data structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the callback. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_port_audio_library_a05dec545cb843f29e147e506ac5bf552}\label{class_port_audio_library_a05dec545cb843f29e147e506ac5bf552}} 
+\index{PortAudioLibrary@{PortAudioLibrary}!recordCallback@{recordCallback}}
+\index{recordCallback@{recordCallback}!PortAudioLibrary@{PortAudioLibrary}}
+\doxysubsubsection{\texorpdfstring{recordCallback()}{recordCallback()}}
+{\footnotesize\ttfamily int Port\+Audio\+Library\+::record\+Callback (\begin{DoxyParamCaption}\item[{const void $\ast$}]{input\+Buffer,  }\item[{void $\ast$}]{output\+Buffer,  }\item[{unsigned long}]{frames\+Per\+Buffer,  }\item[{const Pa\+Stream\+Callback\+Time\+Info $\ast$}]{time\+Info,  }\item[{Pa\+Stream\+Callback\+Flags}]{status\+Flags,  }\item[{void $\ast$}]{user\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Public function to get the record callback. 
+
+This routine will be called by the Port\+Audio engine when audio is available. It may be called at interrupt level on some machines so don\textquotesingle{}t do anything that could mess up the system like calling malloc() or free().
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Buffer} & Pointer of the buffer input. \\
+\hline
+{\em output\+Buffer} & Pointer of the buffer output. \\
+\hline
+{\em frames\+Per\+Buffer} & The number of frames per buffer. \\
+\hline
+{\em time\+Info} & Timing information for the buffers passed to the stream callback. \\
+\hline
+{\em status\+Flags} & Flag bit constants for the status\+Flags to Pa\+Stream\+Callback. \\
+\hline
+{\em user\+Data} & Pointer of the data structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of the callback. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_port_audio_library_a14d9b60dbd82c4e978baa6c32f69711c}\label{class_port_audio_library_a14d9b60dbd82c4e978baa6c32f69711c}} 
+\index{PortAudioLibrary@{PortAudioLibrary}!setPlayBuffer@{setPlayBuffer}}
+\index{setPlayBuffer@{setPlayBuffer}!PortAudioLibrary@{PortAudioLibrary}}
+\doxysubsubsection{\texorpdfstring{setPlayBuffer()}{setPlayBuffer()}}
+{\footnotesize\ttfamily void Port\+Audio\+Library\+::set\+Play\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::list$<$ \mbox{\hyperlink{struct_decoded}{Decoded}} $>$}]{buff }\end{DoxyParamCaption})}
+
+
+
+Public function to set the listening buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buff} & The list of decoder. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common/sound/\+Audio\+Library/\mbox{\hyperlink{_port_audio_library_8hpp}{Port\+Audio\+Library.\+hpp}}\item 
+src/common/sound/\+Audio\+Library/\mbox{\hyperlink{_port_audio_library_8cpp}{Port\+Audio\+Library.\+cpp}}\end{DoxyCompactItemize}

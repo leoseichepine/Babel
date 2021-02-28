@@ -1,0 +1,167 @@
+\hypertarget{class_opus_codec}{}\doxysection{Opus\+Codec Class Reference}
+\label{class_opus_codec}\index{OpusCodec@{OpusCodec}}
+
+
+Class of the Opus codec.  
+
+
+
+
+{\ttfamily \#include $<$Opus\+Codec.\+hpp$>$}
+
+Inheritance diagram for Opus\+Codec\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_opus_codec}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_opus_codec_ac74ea8c4e19c8576095bfb2841bb4e0a}{Opus\+Codec}} (int sample\+Rate, int channel\+Nb)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_opus_codec}{Opus\+Codec}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_opus_codec_a7f2261fba301b45cfd2363bb83464e0f}\label{class_opus_codec_a7f2261fba301b45cfd2363bb83464e0f}} 
+\mbox{\hyperlink{class_opus_codec_a7f2261fba301b45cfd2363bb83464e0f}{$\sim$\+Opus\+Codec}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor of \mbox{\hyperlink{class_opus_codec}{Opus\+Codec}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_opus_codec_a5a49b46f2e89f7389ced5fae1f35c865}{encode}} (int $\ast$in, int frame\+\_\+size, unsigned char $\ast$out, int max\+\_\+bytes) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to encode an Opus frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_opus_codec_a47b596c5f0639fcdfb0c32e20a1a88ae}{encode}} (float $\ast$in, int frame\+\_\+size, unsigned char $\ast$out, int max\+\_\+bytes) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to encode an Opus frame from floating point input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_opus_codec_afb3ec19d20748c5f0a357d10341db2f1}{decode}} (const unsigned char $\ast$in, int len, int $\ast$out, int frame\+\_\+size) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to decode an opus frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_opus_codec_a270d4772085d9fa232adc876b8b47878}{decode}} (const unsigned char $\ast$in, int len, float $\ast$out, int frame\+\_\+size) override
+\begin{DoxyCompactList}\small\item\em Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to decode an opus frame with floating point output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the Opus codec. 
+
+Compliant with \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_opus_codec_ac74ea8c4e19c8576095bfb2841bb4e0a}\label{class_opus_codec_ac74ea8c4e19c8576095bfb2841bb4e0a}} 
+\index{OpusCodec@{OpusCodec}!OpusCodec@{OpusCodec}}
+\index{OpusCodec@{OpusCodec}!OpusCodec@{OpusCodec}}
+\doxysubsubsection{\texorpdfstring{OpusCodec()}{OpusCodec()}}
+{\footnotesize\ttfamily Opus\+Codec\+::\+Opus\+Codec (\begin{DoxyParamCaption}\item[{int}]{sample\+Rate,  }\item[{int}]{channel\+Nb }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_opus_codec}{Opus\+Codec}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sample\+Rate} & The sample rate. \\
+\hline
+{\em channel\+Nb} & The channel number. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_opus_codec_a270d4772085d9fa232adc876b8b47878}\label{class_opus_codec_a270d4772085d9fa232adc876b8b47878}} 
+\index{OpusCodec@{OpusCodec}!decode@{decode}}
+\index{decode@{decode}!OpusCodec@{OpusCodec}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Opus\+Codec\+::decode (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{in,  }\item[{int}]{len,  }\item[{float $\ast$}]{out,  }\item[{int}]{frame\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to decode an opus frame with floating point output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input payload. Use a N\+U\+LL pointer to indicate packet loss. \\
+\hline
+{\em len} & Number of bytes in payload \\
+\hline
+{\em out} & Output signal (interleaved if 2 channels). length is frame\+\_\+size$\ast$channels$\ast$sizeof(float). \\
+\hline
+{\em frame\+\_\+size} & Number of samples per channel of available space in $\ast$pcm. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_audio_codec_a08e2c204368792b7faf742c7c278e667}{I\+Audio\+Codec}}.
+
+\mbox{\Hypertarget{class_opus_codec_afb3ec19d20748c5f0a357d10341db2f1}\label{class_opus_codec_afb3ec19d20748c5f0a357d10341db2f1}} 
+\index{OpusCodec@{OpusCodec}!decode@{decode}}
+\index{decode@{decode}!OpusCodec@{OpusCodec}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Opus\+Codec\+::decode (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{in,  }\item[{int}]{len,  }\item[{int $\ast$}]{out,  }\item[{int}]{frame\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to decode an opus frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input payload. Use a N\+U\+LL pointer to indicate packet loss. \\
+\hline
+{\em len} & Number of bytes in payload \\
+\hline
+{\em out} & Output signal (interleaved if 2 channels). length is frame\+\_\+size$\ast$channels$\ast$sizeof(float). \\
+\hline
+{\em frame\+\_\+size} & Number of samples per channel of available space in $\ast$pcm. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_audio_codec_a89dc86089253c56a772a269e21d249f1}{I\+Audio\+Codec}}.
+
+\mbox{\Hypertarget{class_opus_codec_a47b596c5f0639fcdfb0c32e20a1a88ae}\label{class_opus_codec_a47b596c5f0639fcdfb0c32e20a1a88ae}} 
+\index{OpusCodec@{OpusCodec}!encode@{encode}}
+\index{encode@{encode}!OpusCodec@{OpusCodec}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Opus\+Codec\+::encode (\begin{DoxyParamCaption}\item[{float $\ast$}]{in,  }\item[{int}]{frame\+\_\+size,  }\item[{unsigned char $\ast$}]{out,  }\item[{int}]{max\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to encode an Opus frame from floating point input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input of the signal. \\
+\hline
+{\em frame\+\_\+size} & Number of samples per frame of input signal. \\
+\hline
+{\em out} & Output payload. \\
+\hline
+{\em max\+\_\+bytes} & Allocated memory for payload; don\textquotesingle{}t use for controlling bitrate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_audio_codec_a608bc0ab2a6ef0c051fb1fc737d2c9a4}{I\+Audio\+Codec}}.
+
+\mbox{\Hypertarget{class_opus_codec_a5a49b46f2e89f7389ced5fae1f35c865}\label{class_opus_codec_a5a49b46f2e89f7389ced5fae1f35c865}} 
+\index{OpusCodec@{OpusCodec}!encode@{encode}}
+\index{encode@{encode}!OpusCodec@{OpusCodec}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Opus\+Codec\+::encode (\begin{DoxyParamCaption}\item[{int $\ast$}]{in,  }\item[{int}]{frame\+\_\+size,  }\item[{unsigned char $\ast$}]{out,  }\item[{int}]{max\+\_\+bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Public function overridden from \mbox{\hyperlink{class_i_audio_codec}{I\+Audio\+Codec}} to encode an Opus frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input of the signal. \\
+\hline
+{\em frame\+\_\+size} & Number of samples per frame of input signal. \\
+\hline
+{\em out} & Output payload. \\
+\hline
+{\em max\+\_\+bytes} & Allocated memory for payload; don\textquotesingle{}t use for controlling bitrate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_i_audio_codec_a8ba617f19bab789ffdc66d65ece780a9}{I\+Audio\+Codec}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common/sound/\+Audio\+Codec/\mbox{\hyperlink{_opus_codec_8hpp}{Opus\+Codec.\+hpp}}\item 
+src/common/sound/\+Audio\+Codec/\mbox{\hyperlink{_opus_codec_8cpp}{Opus\+Codec.\+cpp}}\end{DoxyCompactItemize}

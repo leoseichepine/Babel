@@ -1,0 +1,72 @@
+\hypertarget{class_babel_1_1_server}{}\doxysection{Babel\+::Server Class Reference}
+\label{class_babel_1_1_server}\index{Babel::Server@{Babel::Server}}
+
+
+Class of the server.  
+
+
+
+
+{\ttfamily \#include $<$Server.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_babel_1_1_server_a32e4db2be235b7b0b0083268cf0f34c1}\label{class_babel_1_1_server_a32e4db2be235b7b0b0083268cf0f34c1}} 
+typedef int(Babel\+::\+Server\+::$\ast$ \mbox{\hyperlink{class_babel_1_1_server_a32e4db2be235b7b0b0083268cf0f34c1}{cmd\+Handler\+\_\+t}}) (\mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}{Boost\+T\+C\+P\+Socket\+::ptr}} socket, std\+::vector$<$ std\+::string $>$ \&args)
+\begin{DoxyCompactList}\small\item\em A typedef for the sequence container of the commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_babel_1_1_server_ab2f1bb4ee6e18b2cd5e49e76b9f649d1}{Server}} (boost\+::asio\+::io\+\_\+service \&ios, int port=42042)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_babel_1_1_server}{Server}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_server_abee7729cf589c19309ab94f7272536e8}\label{class_babel_1_1_server_abee7729cf589c19309ab94f7272536e8}} 
+\mbox{\hyperlink{class_babel_1_1_server_abee7729cf589c19309ab94f7272536e8}{$\sim$\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_babel_1_1_server}{Server}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}{Boost\+T\+C\+P\+Socket\+::ptr}} $>$ \& \mbox{\hyperlink{class_babel_1_1_server_a4147e4070f00b76a8931a06a1236b164}{get\+Sockets}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to get sockets of the server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the server. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_babel_1_1_server_ab2f1bb4ee6e18b2cd5e49e76b9f649d1}\label{class_babel_1_1_server_ab2f1bb4ee6e18b2cd5e49e76b9f649d1}} 
+\index{Babel::Server@{Babel::Server}!Server@{Server}}
+\index{Server@{Server}!Babel::Server@{Babel::Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily Babel\+::\+Server\+::\+Server (\begin{DoxyParamCaption}\item[{boost\+::asio\+::io\+\_\+service \&}]{ios,  }\item[{int}]{port = {\ttfamily 42042} }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_babel_1_1_server}{Server}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ios} & Boost asio service. \\
+\hline
+{\em port} & The port of the server. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_server_a4147e4070f00b76a8931a06a1236b164}\label{class_babel_1_1_server_a4147e4070f00b76a8931a06a1236b164}} 
+\index{Babel::Server@{Babel::Server}!getSockets@{getSockets}}
+\index{getSockets@{getSockets}!Babel::Server@{Babel::Server}}
+\doxysubsubsection{\texorpdfstring{getSockets()}{getSockets()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_abde153d232f11042be269c9db5cc5579}{Babel\+::\+Boost\+T\+C\+P\+Socket\+::ptr}} $>$ \& Babel\+::\+Server\+::get\+Sockets (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Public function to get sockets of the server. 
+
+\begin{DoxyReturn}{Returns}
+a sequence container of the server\textquotesingle{}s sockets. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/server/Server.\+hpp\item 
+src/server/\mbox{\hyperlink{_server_8cpp}{Server.\+cpp}}\end{DoxyCompactItemize}

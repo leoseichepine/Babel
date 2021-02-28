@@ -1,0 +1,54 @@
+\hypertarget{class_i_audio_stream}{}\doxysection{I\+Audio\+Stream Class Reference}
+\label{class_i_audio_stream}\index{IAudioStream@{IAudioStream}}
+
+
+Interface of the audio stream.  
+
+
+
+
+{\ttfamily \#include $<$I\+Audio\+Library.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_audio_stream_a77c66e1b4ce805913178a6c79c7bce8f}\label{class_i_audio_stream_a77c66e1b4ce805913178a6c79c7bce8f}} 
+virtual \mbox{\hyperlink{class_i_audio_stream_a77c66e1b4ce805913178a6c79c7bce8f}{$\sim$\+I\+Audio\+Stream}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual constructor of \mbox{\hyperlink{class_i_audio_stream}{I\+Audio\+Stream}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_audio_stream_a44f6602b8462d31c2337f38bef1e86cd}\label{class_i_audio_stream_a44f6602b8462d31c2337f38bef1e86cd}} 
+virtual void \mbox{\hyperlink{class_i_audio_stream_a44f6602b8462d31c2337f38bef1e86cd}{open}} (void)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to open the audio stream. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_audio_stream_a3c4e56dea7069ced9f787f4c6f1adaee}\label{class_i_audio_stream_a3c4e56dea7069ced9f787f4c6f1adaee}} 
+virtual void \mbox{\hyperlink{class_i_audio_stream_a3c4e56dea7069ced9f787f4c6f1adaee}{start}} (void)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to start the audio stream. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_audio_stream_a2e15c102c1a300db23858989db621004}\label{class_i_audio_stream_a2e15c102c1a300db23858989db621004}} 
+virtual void \mbox{\hyperlink{class_i_audio_stream_a2e15c102c1a300db23858989db621004}{close}} (void)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to close the audio stream. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_i_audio_stream_ad6ae2c75502e9c98132b03ffc6981f02}{is\+Active}} (void)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function check if the audio stream is active. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface of the audio stream. 
+
+Interface for Port Audio. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_audio_stream_ad6ae2c75502e9c98132b03ffc6981f02}\label{class_i_audio_stream_ad6ae2c75502e9c98132b03ffc6981f02}} 
+\index{IAudioStream@{IAudioStream}!isActive@{isActive}}
+\index{isActive@{isActive}!IAudioStream@{IAudioStream}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily virtual bool I\+Audio\+Stream\+::is\+Active (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function check if the audio stream is active. 
+
+\begin{DoxyReturn}{Returns}
+the status of the audio stream\textquotesingle{}s activity. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common/sound/\+Audio\+Library/\mbox{\hyperlink{_i_audio_library_8hpp}{I\+Audio\+Library.\+hpp}}\end{DoxyCompactItemize}

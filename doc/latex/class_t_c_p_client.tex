@@ -1,0 +1,115 @@
+\hypertarget{class_t_c_p_client}{}\doxysection{T\+C\+P\+Client Class Reference}
+\label{class_t_c_p_client}\index{TCPClient@{TCPClient}}
+
+
+Class of the T\+CP socket of the client.  
+
+
+
+
+{\ttfamily \#include $<$T\+C\+P\+Client.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_c_p_client_a0e6ac1620c9bcd8eb9044547f02b2884}{T\+C\+P\+Client}} (\mbox{\hyperlink{class_babel_1_1_connection_infos}{Babel\+::\+Connection\+Infos}} \&infos)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_t_c_p_client}{T\+C\+P\+Client}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_c_p_client_a869a5b3319ca562d03cb4c59ebec4407}{$\sim$\+T\+C\+P\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of Qt\+T\+C\+P\+Socket. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_babel_1_1_qt_t_c_p_socket}{Babel\+::\+Qt\+T\+C\+P\+Socket}} $\ast$ \mbox{\hyperlink{class_t_c_p_client_ae5884a7069be38d5a00b08ab95171ed0}{get\+Socket}} (void)
+\begin{DoxyCompactList}\small\item\em Get the client\textquotesingle{}s socket. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_c_p_client_a549a25ba39f42f367fb47e96f4716f33}{set\+Username}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set the client\textquotesingle{}s username. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_c_p_client_a2ba3afc5074b9119a416e4739557b4e5}{set\+Password}} (const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Set the client\textquotesingle{}s password. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of the T\+CP socket of the client. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_c_p_client_a0e6ac1620c9bcd8eb9044547f02b2884}\label{class_t_c_p_client_a0e6ac1620c9bcd8eb9044547f02b2884}} 
+\index{TCPClient@{TCPClient}!TCPClient@{TCPClient}}
+\index{TCPClient@{TCPClient}!TCPClient@{TCPClient}}
+\doxysubsubsection{\texorpdfstring{TCPClient()}{TCPClient()}}
+{\footnotesize\ttfamily T\+C\+P\+Client\+::\+T\+C\+P\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_connection_infos}{Babel\+::\+Connection\+Infos}} \&}]{infos }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_t_c_p_client}{T\+C\+P\+Client}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ios} & Boost asio service. \\
+\hline
+{\em infos} & Infos about the connection. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_c_p_client_a869a5b3319ca562d03cb4c59ebec4407}\label{class_t_c_p_client_a869a5b3319ca562d03cb4c59ebec4407}} 
+\index{TCPClient@{TCPClient}!````~TCPClient@{$\sim$TCPClient}}
+\index{````~TCPClient@{$\sim$TCPClient}!TCPClient@{TCPClient}}
+\doxysubsubsection{\texorpdfstring{$\sim$TCPClient()}{~TCPClient()}}
+{\footnotesize\ttfamily T\+C\+P\+Client\+::$\sim$\+T\+C\+P\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor of Qt\+T\+C\+P\+Socket. 
+
+Deletes the QT socket. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_c_p_client_ae5884a7069be38d5a00b08ab95171ed0}\label{class_t_c_p_client_ae5884a7069be38d5a00b08ab95171ed0}} 
+\index{TCPClient@{TCPClient}!getSocket@{getSocket}}
+\index{getSocket@{getSocket}!TCPClient@{TCPClient}}
+\doxysubsubsection{\texorpdfstring{getSocket()}{getSocket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_babel_1_1_qt_t_c_p_socket}{Babel\+::\+Qt\+T\+C\+P\+Socket}} $\ast$ T\+C\+P\+Client\+::get\+Socket (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the client\textquotesingle{}s socket. 
+
+Public method.
+
+\begin{DoxyReturn}{Returns}
+the pointer of the socket. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_c_p_client_a2ba3afc5074b9119a416e4739557b4e5}\label{class_t_c_p_client_a2ba3afc5074b9119a416e4739557b4e5}} 
+\index{TCPClient@{TCPClient}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!TCPClient@{TCPClient}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily void T\+C\+P\+Client\+::set\+Password (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Set the client\textquotesingle{}s password. 
+
+Public method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The string of the client\textquotesingle{}s password. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_c_p_client_a549a25ba39f42f367fb47e96f4716f33}\label{class_t_c_p_client_a549a25ba39f42f367fb47e96f4716f33}} 
+\index{TCPClient@{TCPClient}!setUsername@{setUsername}}
+\index{setUsername@{setUsername}!TCPClient@{TCPClient}}
+\doxysubsubsection{\texorpdfstring{setUsername()}{setUsername()}}
+{\footnotesize\ttfamily void T\+C\+P\+Client\+::set\+Username (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+
+
+Set the client\textquotesingle{}s username. 
+
+Public method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The string of the client\textquotesingle{}s username. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/client/network/\mbox{\hyperlink{_t_c_p_client_8hpp}{T\+C\+P\+Client.\+hpp}}\item 
+src/client/network/\mbox{\hyperlink{_t_c_p_client_8cpp}{T\+C\+P\+Client.\+cpp}}\end{DoxyCompactItemize}

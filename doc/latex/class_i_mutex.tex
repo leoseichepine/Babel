@@ -1,0 +1,40 @@
+\hypertarget{class_i_mutex}{}\doxysection{I\+Mutex Class Reference}
+\label{class_i_mutex}\index{IMutex@{IMutex}}
+
+
+Interface of the mutex thread.  
+
+
+
+
+{\ttfamily \#include $<$Mutex.\+hpp$>$}
+
+Inheritance diagram for I\+Mutex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_mutex}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_i_mutex_aa8a31ad54bb9baad370d15f4cd70b1ba}\label{class_i_mutex_aa8a31ad54bb9baad370d15f4cd70b1ba}} 
+virtual \mbox{\hyperlink{class_i_mutex_aa8a31ad54bb9baad370d15f4cd70b1ba}{$\sim$\+I\+Mutex}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual constructor of \mbox{\hyperlink{class_i_mutex}{I\+Mutex}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_mutex_ab7ba4deb502ef51a604b7a4d154373c0}\label{class_i_mutex_ab7ba4deb502ef51a604b7a4d154373c0}} 
+virtual void \mbox{\hyperlink{class_i_mutex_ab7ba4deb502ef51a604b7a4d154373c0}{lock}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to lock a thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_mutex_ae73a150e6fb18e7553288dd228ddff96}\label{class_i_mutex_ae73a150e6fb18e7553288dd228ddff96}} 
+virtual void \mbox{\hyperlink{class_i_mutex_ae73a150e6fb18e7553288dd228ddff96}{unlock}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to unlock a thread. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_i_mutex_a463db1f9a4e32c64197a71855b0a1eec}\label{class_i_mutex_a463db1f9a4e32c64197a71855b0a1eec}} 
+virtual void \mbox{\hyperlink{class_i_mutex_a463db1f9a4e32c64197a71855b0a1eec}{trylock}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to try to lock a thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface of the mutex thread. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/common/threads/\mbox{\hyperlink{_mutex_8hpp}{Mutex.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,341 @@
+\hypertarget{class_babel_1_1_a_t_c_p_socket}{}\doxysection{Babel\+::A\+T\+C\+P\+Socket Class Reference}
+\label{class_babel_1_1_a_t_c_p_socket}\index{Babel::ATCPSocket@{Babel::ATCPSocket}}
+
+
+Abstract class.  
+
+
+
+
+{\ttfamily \#include $<$A\+T\+C\+P\+Socket.\+hpp$>$}
+
+Inheritance diagram for Babel\+::A\+T\+C\+P\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_babel_1_1_a_t_c_p_socket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_abb0ae7599011133577dc4735d3a17fb5}{A\+T\+C\+P\+Socket}} (\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&infos)
+\begin{DoxyCompactList}\small\item\em Constructor of \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a6cef15a7ea94431761308e8da297b75d}\label{class_babel_1_1_a_t_c_p_socket_a6cef15a7ea94431761308e8da297b75d}} 
+virtual \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a6cef15a7ea94431761308e8da297b75d}{$\sim$\+A\+T\+C\+P\+Socket}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}}. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_aadb07ff2dfbe76422bd339d3eb2a9ac3}{connect}} (void)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to connect the socket. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a09876941856256557dc0cec6be9a4bef}{disconnect}} (void)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to disconnect the socket. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_aadbbb4f8ea8a1109e45c82dcb3e1ab4a}{send}} (const std\+::string \&data)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to send a message. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_ad2cb29bc10b6cc7666243feafbe85a1a}{receive}} (void)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to receive a message. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a38d2d81154e1890297ab099f236c2d2e}{is\+Connected}} (void) const
+\begin{DoxyCompactList}\small\item\em Public function to know if the socket is connected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a6b98777e13588dc4128f1f9a47d8fc94}{set\+Connected}} (bool)
+\begin{DoxyCompactList}\small\item\em Public function to set the connection status. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_ac740537c5fa5b7219375957e81209fbb}{get\+Connection\+Infos}} (void) const
+\begin{DoxyCompactList}\small\item\em Public function to get the connection information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_aaaa673069ff8c054c76da5b921661c2e}{set\+Connection\+Infos}} (\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&infos)
+\begin{DoxyCompactList}\small\item\em Public function to set the connection information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a77e5704e285b2fcf82f90f9bbb130bc8}{operator==}} (\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&infos)
+\begin{DoxyCompactList}\small\item\em The equality operator between connection information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data}{Data}} \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_af7dc95d9af53bedd426746abe49a7d16}{pop\+Cmd}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to pop a command. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a27f02912911e7890bbe44b0c60bb8769}{has\+Cmd}} (void)
+\begin{DoxyCompactList}\small\item\em Public function to check if the socket has the command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a276ede6dada08200f87ac80594420c2e}{\+\_\+connected}}
+\begin{DoxyCompactList}\small\item\em The connection status. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a756cd54cc4cd8d6ea5b67b7b9eef4f57}{\+\_\+infos}}
+\begin{DoxyCompactList}\small\item\em The connection information. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a27f52f1076732439d50b6f7356153b6b}{\+\_\+queue}}
+\begin{DoxyCompactList}\small\item\em The queue of commands. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_ad1d7d62c3dc8111f2ccbdf4a3cd92f85}{\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em The data request. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_command_parser}{Command\+Parser}} \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a7d7fddbbf865ed8e3085cfd5c158b1b1}{\+\_\+cmd\+Parser}}
+\begin{DoxyCompactList}\small\item\em The command parser. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{class_data}{Data}} $>$ \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a0baee140524922d41e3d1e558214ed93}{\+\_\+packets}}
+\begin{DoxyCompactList}\small\item\em The socket\textquotesingle{}s packets. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket_a3a67be206d48020b9bd174958c453928}{\+\_\+msg}}
+\begin{DoxyCompactList}\small\item\em The socket\textquotesingle{}s message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_abb0ae7599011133577dc4735d3a17fb5}\label{class_babel_1_1_a_t_c_p_socket_abb0ae7599011133577dc4735d3a17fb5}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!ATCPSocket@{ATCPSocket}}
+\index{ATCPSocket@{ATCPSocket}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{ATCPSocket()}{ATCPSocket()}}
+{\footnotesize\ttfamily Babel\+::\+A\+T\+C\+P\+Socket\+::\+A\+T\+C\+P\+Socket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&}]{infos }\end{DoxyParamCaption})}
+
+
+
+Constructor of \mbox{\hyperlink{class_babel_1_1_a_t_c_p_socket}{A\+T\+C\+P\+Socket}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infos} & Infos about the connection. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_aadb07ff2dfbe76422bd339d3eb2a9ac3}\label{class_babel_1_1_a_t_c_p_socket_aadb07ff2dfbe76422bd339d3eb2a9ac3}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!connect@{connect}}
+\index{connect@{connect}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual bool Babel\+::\+A\+T\+C\+P\+Socket\+::connect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to connect the socket. 
+
+\begin{DoxyReturn}{Returns}
+the connection status. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_ab2bfea2e4c7c91c19d758d8496fbcdcd}{Babel\+::\+Boost\+T\+C\+P\+Socket}}, and \mbox{\hyperlink{class_babel_1_1_qt_t_c_p_socket_a9c338dbf669bbfe52a6ac971e157959a}{Babel\+::\+Qt\+T\+C\+P\+Socket}}.
+
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a09876941856256557dc0cec6be9a4bef}\label{class_babel_1_1_a_t_c_p_socket_a09876941856256557dc0cec6be9a4bef}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily virtual bool Babel\+::\+A\+T\+C\+P\+Socket\+::disconnect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to disconnect the socket. 
+
+\begin{DoxyReturn}{Returns}
+the disconnection status. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_ade9b8a08d327f57c8879d20161438c67}{Babel\+::\+Boost\+T\+C\+P\+Socket}}, and \mbox{\hyperlink{class_babel_1_1_qt_t_c_p_socket_a068fef1266ee53ac850c65a7f50be923}{Babel\+::\+Qt\+T\+C\+P\+Socket}}.
+
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_ac740537c5fa5b7219375957e81209fbb}\label{class_babel_1_1_a_t_c_p_socket_ac740537c5fa5b7219375957e81209fbb}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!getConnectionInfos@{getConnectionInfos}}
+\index{getConnectionInfos@{getConnectionInfos}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{getConnectionInfos()}{getConnectionInfos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_babel_1_1_connection_infos}{Babel\+::\+Connection\+Infos}} Babel\+::\+A\+T\+C\+P\+Socket\+::get\+Connection\+Infos (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Public function to get the connection information. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+the connection information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a27f02912911e7890bbe44b0c60bb8769}\label{class_babel_1_1_a_t_c_p_socket_a27f02912911e7890bbe44b0c60bb8769}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!hasCmd@{hasCmd}}
+\index{hasCmd@{hasCmd}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{hasCmd()}{hasCmd()}}
+{\footnotesize\ttfamily bool Babel\+::\+A\+T\+C\+P\+Socket\+::has\+Cmd (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Public function to check if the socket has the command. 
+
+\begin{DoxyReturn}{Returns}
+the status of holding the command. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a38d2d81154e1890297ab099f236c2d2e}\label{class_babel_1_1_a_t_c_p_socket_a38d2d81154e1890297ab099f236c2d2e}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{isConnected()}{isConnected()}}
+{\footnotesize\ttfamily bool Babel\+::\+A\+T\+C\+P\+Socket\+::is\+Connected (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Public function to know if the socket is connected. 
+
+Getter method.
+
+\begin{DoxyReturn}{Returns}
+the connection status. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a77e5704e285b2fcf82f90f9bbb130bc8}\label{class_babel_1_1_a_t_c_p_socket_a77e5704e285b2fcf82f90f9bbb130bc8}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!operator==@{operator==}}
+\index{operator==@{operator==}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Babel\+::\+A\+T\+C\+P\+Socket\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&}]{infos }\end{DoxyParamCaption})}
+
+
+
+The equality operator between connection information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infos} & Infos about the connection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of equality. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_af7dc95d9af53bedd426746abe49a7d16}\label{class_babel_1_1_a_t_c_p_socket_af7dc95d9af53bedd426746abe49a7d16}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!popCmd@{popCmd}}
+\index{popCmd@{popCmd}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{popCmd()}{popCmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data}{Data}} Babel\+::\+A\+T\+C\+P\+Socket\+::pop\+Cmd (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Public function to pop a command. 
+
+\begin{DoxyReturn}{Returns}
+the data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_ad2cb29bc10b6cc7666243feafbe85a1a}\label{class_babel_1_1_a_t_c_p_socket_ad2cb29bc10b6cc7666243feafbe85a1a}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!receive@{receive}}
+\index{receive@{receive}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily virtual std\+::string Babel\+::\+A\+T\+C\+P\+Socket\+::receive (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to receive a message. 
+
+\begin{DoxyReturn}{Returns}
+the string message. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_a6ce94467ec3a6a69b0124c35922e3731}{Babel\+::\+Boost\+T\+C\+P\+Socket}}, and \mbox{\hyperlink{class_babel_1_1_qt_t_c_p_socket_a2f33f4ea534180b6b42e4bdb3e2a5e63}{Babel\+::\+Qt\+T\+C\+P\+Socket}}.
+
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_aadbbb4f8ea8a1109e45c82dcb3e1ab4a}\label{class_babel_1_1_a_t_c_p_socket_aadbbb4f8ea8a1109e45c82dcb3e1ab4a}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!send@{send}}
+\index{send@{send}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily virtual bool Babel\+::\+A\+T\+C\+P\+Socket\+::send (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to send a message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \mbox{\hyperlink{class_data}{Data}} to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sending status. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_babel_1_1_boost_t_c_p_socket_a35851c1fee21d8fa02a9d6c6e64730de}{Babel\+::\+Boost\+T\+C\+P\+Socket}}, and \mbox{\hyperlink{class_babel_1_1_qt_t_c_p_socket_a489af06d274e68d0fdf31eda57fa87c4}{Babel\+::\+Qt\+T\+C\+P\+Socket}}.
+
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a6b98777e13588dc4128f1f9a47d8fc94}\label{class_babel_1_1_a_t_c_p_socket_a6b98777e13588dc4128f1f9a47d8fc94}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!setConnected@{setConnected}}
+\index{setConnected@{setConnected}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{setConnected()}{setConnected()}}
+{\footnotesize\ttfamily void Babel\+::\+A\+T\+C\+P\+Socket\+::set\+Connected (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})}
+
+
+
+Public function to set the connection status. 
+
+Setter method. \mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_aaaa673069ff8c054c76da5b921661c2e}\label{class_babel_1_1_a_t_c_p_socket_aaaa673069ff8c054c76da5b921661c2e}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!setConnectionInfos@{setConnectionInfos}}
+\index{setConnectionInfos@{setConnectionInfos}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{setConnectionInfos()}{setConnectionInfos()}}
+{\footnotesize\ttfamily void Babel\+::\+A\+T\+C\+P\+Socket\+::set\+Connection\+Infos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} \&}]{infos }\end{DoxyParamCaption})}
+
+
+
+Public function to set the connection information. 
+
+Setter method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em infos} & Infos about the connection. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a7d7fddbbf865ed8e3085cfd5c158b1b1}\label{class_babel_1_1_a_t_c_p_socket_a7d7fddbbf865ed8e3085cfd5c158b1b1}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!\_cmdParser@{\_cmdParser}}
+\index{\_cmdParser@{\_cmdParser}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{\_cmdParser}{\_cmdParser}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_command_parser}{Command\+Parser}} Babel\+::\+A\+T\+C\+P\+Socket\+::\+\_\+cmd\+Parser\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The command parser. 
+
+Protected property. \mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a276ede6dada08200f87ac80594420c2e}\label{class_babel_1_1_a_t_c_p_socket_a276ede6dada08200f87ac80594420c2e}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!\_connected@{\_connected}}
+\index{\_connected@{\_connected}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{\_connected}{\_connected}}
+{\footnotesize\ttfamily bool Babel\+::\+A\+T\+C\+P\+Socket\+::\+\_\+connected\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The connection status. 
+
+Protected property. \mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_ad1d7d62c3dc8111f2ccbdf4a3cd92f85}\label{class_babel_1_1_a_t_c_p_socket_ad1d7d62c3dc8111f2ccbdf4a3cd92f85}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!\_data@{\_data}}
+\index{\_data@{\_data}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily std\+::string Babel\+::\+A\+T\+C\+P\+Socket\+::\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The data request. 
+
+Protected property. \mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a756cd54cc4cd8d6ea5b67b7b9eef4f57}\label{class_babel_1_1_a_t_c_p_socket_a756cd54cc4cd8d6ea5b67b7b9eef4f57}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!\_infos@{\_infos}}
+\index{\_infos@{\_infos}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{\_infos}{\_infos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_babel_1_1_connection_infos}{Connection\+Infos}} Babel\+::\+A\+T\+C\+P\+Socket\+::\+\_\+infos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The connection information. 
+
+Protected property. \mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a3a67be206d48020b9bd174958c453928}\label{class_babel_1_1_a_t_c_p_socket_a3a67be206d48020b9bd174958c453928}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!\_msg@{\_msg}}
+\index{\_msg@{\_msg}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{\_msg}{\_msg}}
+{\footnotesize\ttfamily std\+::string Babel\+::\+A\+T\+C\+P\+Socket\+::\+\_\+msg\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The socket\textquotesingle{}s message. 
+
+Protected property. \mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a0baee140524922d41e3d1e558214ed93}\label{class_babel_1_1_a_t_c_p_socket_a0baee140524922d41e3d1e558214ed93}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!\_packets@{\_packets}}
+\index{\_packets@{\_packets}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{\_packets}{\_packets}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{class_data}{Data}}$>$ Babel\+::\+A\+T\+C\+P\+Socket\+::\+\_\+packets\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The socket\textquotesingle{}s packets. 
+
+Protected property. \mbox{\Hypertarget{class_babel_1_1_a_t_c_p_socket_a27f52f1076732439d50b6f7356153b6b}\label{class_babel_1_1_a_t_c_p_socket_a27f52f1076732439d50b6f7356153b6b}} 
+\index{Babel::ATCPSocket@{Babel::ATCPSocket}!\_queue@{\_queue}}
+\index{\_queue@{\_queue}!Babel::ATCPSocket@{Babel::ATCPSocket}}
+\doxysubsubsection{\texorpdfstring{\_queue}{\_queue}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Babel\+::\+A\+T\+C\+P\+Socket\+::\+\_\+queue\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The queue of commands. 
+
+Protected property. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/common/network/\mbox{\hyperlink{_a_t_c_p_socket_8hpp}{A\+T\+C\+P\+Socket.\+hpp}}\item 
+src/common/network/\mbox{\hyperlink{_a_t_c_p_socket_8cpp}{A\+T\+C\+P\+Socket.\+cpp}}\end{DoxyCompactItemize}
